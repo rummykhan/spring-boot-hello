@@ -10,6 +10,7 @@
 
 <a href="/conference/greeting/rummykhan">Greeting</a>
 <a href="/conference/registration/">Registration</a>
+<a href="/conference/data-files/object.pdf">Object Calisthenics</a>
 
 </body>
 </html>
