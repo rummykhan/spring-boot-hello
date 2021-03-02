@@ -20,21 +20,26 @@
 <div class="row">
     <div class="col-md-6 offset-md-3 col-sm-12">
 
-        <form:form modelAttribute="registration">
+        <form:form modelAttribute="registration" action="/conference/registration" method="POST">
+
+            <form:errors  path="*" cssClass="alert alert-danger" element="div" />
 
             <div class="form-group">
                 <label for=""><spring:message code="name" /></label>
-                <form:input type="text" path="name" cssClass="form-control" required="required"/>
+                <form:input type="text" path="name" cssClass="form-control"/>
+                <form:errors  path="name" cssClass="help-block text-danger" element="span" />
             </div>
 
             <div class="form-group">
                 <label for=""><spring:message code="email" /></label>
-                <form:input type="email" path="email" cssClass="form-control" required="required"/>
+                <form:input type="email" path="email" cssClass="form-control"/>
+                <form:errors  path="email" cssClass="help-block text-danger" element="span" />
             </div>
 
             <div class="form-group">
                 <label for=""><spring:message code="password" /></label>
                 <form:password path="password" cssClass="form-control" required="required"/>
+                <form:errors  path="password" cssClass="help-block text-danger" element="span" />
             </div>
 
             <div class="form-group">
